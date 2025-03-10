@@ -21,7 +21,7 @@ In my past experience with [the Kilo editor](https://github.com/antirez/kilo) an
 
 To try this program, compile with:
 
-    cc ttt.c -o ttt -O3 -Wall -W -ffast-math
+    cc ttt.c -o ttt -O3 -Wall -W -ffast-math -lm
 
 Then run with
 
