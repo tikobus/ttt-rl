@@ -162,10 +162,10 @@ need to play more selectively.
 ## Weights updating
 
 We just use trivial backpropagation, and the code is designed in order to
-show very clearly that after all things work in a VERY similar way to
-what happens with supervised learning: just the input/output pairs are not
-known beforehand, but they are provided on the fly based on the reward
-policy of reinforcement learning.
+show very clearly that, after all, things work in a VERY similar way to
+what happens with supervised learning: the difference is just the input/output
+pairs are not known beforehand, but they are provided on the fly based on the
+reward policy of reinforcement learning.
 
 Please check the code for more information, oh, and another thing:
 
