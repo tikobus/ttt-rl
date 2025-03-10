@@ -164,4 +164,6 @@ what happens with supervised learning: just the input/output pairs are not
 known beforehand, but they are provided on the fly based on the reward
 policy of reinforcement learning.
 
-Please check the code for more information.
+Please check the code for more information, oh, and another thing:
+
+*The only winning move is not to play*
