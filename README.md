@@ -1,5 +1,7 @@
 # Tic Tac Toe with Reinforcement Learning
 
+*The only winning move is not to play*
+
 This code implements a neural network that learns to play tic-tac-toe using
 reinforcement learning, just playing against a random adversary, in **under
 400 lines of C code**, without any external library used. I guess there are
@@ -167,6 +169,13 @@ what happens with supervised learning: the difference is just the input/output
 pairs are not known beforehand, but they are provided on the fly based on the
 reward policy of reinforcement learning.
 
-Please check the code for more information, oh, and another thing:
+Please check the code for more information.
 
-*The only winning move is not to play*
+## Future work
+
+Things I didn't test because the complexity would kinda sabotage the educational value of the program and/or for lack of time, but that could be interesting exercises and interesting other projects / branches:
+
+* Can this approach work with connect four as well? The much larger space of the problem would be really interesting and less of a toy.
+* Train the network to play both sides by having an additional input set, that is the symbol that is going to do the move (useful especially in the case of connect four) so that we can use the network itself as opponent, instead of playing against random moves.
+* Implement proper sampling, in the case above, so that initially moves are quite random, later they start to pick more consistently the predicted move.
+* MCTS.
