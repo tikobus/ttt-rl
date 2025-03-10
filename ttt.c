@@ -98,7 +98,7 @@ void softmax(float *input, float *output, int size) {
 }
 
 /* Neural network foward pass (inference). We store the activations
- * so we can also do back propagation later. */
+ * so we can also do backpropagation later. */
 void forward_pass(NeuralNetwork *nn, float *inputs) {
     // Copy inputs.
     memcpy(nn->inputs, inputs, NN_INPUT_SIZE * sizeof(float));
