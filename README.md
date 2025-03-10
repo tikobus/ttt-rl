@@ -156,7 +156,7 @@ each game to finish. The temporal scaling above is just a way to code inside
 the network that early moves are more open, while, as the game goes on, we
 need to play more selectively.
 
-## Learning
+## Weights updating
 
 We just use trivial backpropagation, and the code is designed in order to
 show very clearly that after all things work in a VERY similar way to
