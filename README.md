@@ -12,7 +12,7 @@ things without any pre-existing clue about the game:
 2. *Tabula rasa* learning: no knowledge of the game is put into the program, if not the fact that X or O can't be put into already used tile, and the fact that a victory or a tie is reached when there are three same symbols in a row or all the tiles are used.
 3. The only signal used to train the neural network is the reward of the game: win, lose, tie.
 
-In my past experience with [the Kilo editor](https://github.com/antriez/kilo) and the [Picol interpreter](https://github.com/antirez/picol) I noticed that for programmers that want to understand new fields (especially young programmers) small C programs without dependencies, clearly written, commented and *very short* are a good starting point, so, in order to celebrate the Turing Award assigned to Sutton and Barto, I thought of writing this one.
+In my past experience with [the Kilo editor](https://github.com/antirez/kilo) and the [Picol interpreter](https://github.com/antirez/picol) I noticed that for programmers that want to understand new fields (especially young programmers) small C programs without dependencies, clearly written, commented and *very short* are a good starting point, so, in order to celebrate the Turing Award assigned to Sutton and Barto, I thought of writing this one.
 
 To try this program, compile with:
 
