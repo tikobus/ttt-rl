@@ -2,7 +2,10 @@
 
 This code implements a neural network that learns to play tic-tac-toe using
 reinforcement learning, just playing against a random adversary, in **under
-400 lines of C code**, without any external library used.
+400 lines of C code**, without any external library used. I guess there are
+many examples of RL out there, written in PyTorch or with other ML frameworks,
+however what I wanted to accomplish here was to have the whole thing
+implemented from scratch, so that each part is understandable and self-evident.
 
 While the code is a toy, designed to help interested people to learn the basics
 of reinforcement learning, it actually showcases the power of RL in learning
