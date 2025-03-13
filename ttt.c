@@ -576,8 +576,10 @@ void train_against_random(NeuralNetwork *nn, int num_games) {
 
     printf("Training neural network against %d random games...\n", num_games);
 
+    int played_games = 0;
     for (int i = 0; i < num_games; i++) {
         char winner = play_random_game(nn, move_history, &num_moves);
+        played_games++;
 
         // Accumulate statistics that are provided to the user (it's fun).
         if (winner == 'O') {
@@ -592,9 +594,13 @@ void train_against_random(NeuralNetwork *nn, int num_games) {
         if ((i + 1) % 10000 == 0) {
             printf("Games: %d, Wins: %d (%.1f%%), "
                    "Losses: %d (%.1f%%), Ties: %d (%.1f%%)\n",
-                  i + 1, wins, (float)wins * 100 / (i + 1),
-                  losses, (float)losses * 100 / (i + 1),
-                  ties, (float)ties * 100 / (i + 1));
+                  i + 1, wins, (float)wins * 100 / played_games,
+                  losses, (float)losses * 100 / played_games,
+                  ties, (float)ties * 100 / played_games);
+            played_games = 0;
+            wins = 0;
+            losses = 0;
+            ties = 0;
         }
     }
     printf("\nTraining complete!\n");
