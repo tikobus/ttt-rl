@@ -369,11 +369,11 @@ void learn_from_game(NeuralNetwork *nn, int *move_history, int num_moves, int nn
     char nn_symbol = nn_moves_even ? 'O' : 'X';
 
     if (winner == 'T') {
-        reward = 0.2f;  // Small reward for draw
+        reward = 0.3f;  // Small reward for draw
     } else if (winner == nn_symbol) {
         reward = 1.0f;  // Large reward for win
     } else {
-        reward = -1.0f; // Negative reward for loss
+        reward = -2.0f; // Negative reward for loss
     }
 
     GameState state;
